@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "superheroAPI";
+package superhero_api;
+
+import "../superhero/superhero.proto";
+
+service SuperheroApi {
+  rpc CreateSuperHero (SuperHeroRequest) returns (SuperHeroResponse);
+}
+
+message SuperHeroRequest {
+  
+}

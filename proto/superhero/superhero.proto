@@ -1,0 +1,33 @@
+syntax="proto3";
+option go_package = 'superhero';
+package superhero;
+
+message Superhero {
+  string id = 1;
+  string name = 2;
+  string skill = 3;
+
+  enum Home {
+    marvel = 0;
+    DC = 1;
+  }
+
+  Home home = 4;
+
+  // These are the attributes of the superhero
+  message Attributes {
+
+    enum Genre {
+      male = 0;
+      female = 1;
+    };
+
+    Genre genre = 1;
+    string weakness = 2;
+    int32 attack = 3;
+    int32 health = 4;
+  }
+}
+
+
+

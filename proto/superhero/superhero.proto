@@ -1,6 +1,6 @@
 syntax="proto3";
-option go_package = 'superhero';
-package superhero;
+package superhero.v1;
+option go_package = 'superhero/api';
 
 message Superhero {
   string id = 1;
